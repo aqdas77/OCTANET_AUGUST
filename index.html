@@ -1,74 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="navbar">
-      <div class="title">
-        <h2 class="text2">Landing Page</h2>
-      </div>
-      <div class="options">
-         <span ><a href="" class="text2">Home</a> </span>
-         <span ><a href="" class="text2">About</a> </span>
-         <span ><a href="" class="text2">Signup</a> </span>
-      </div>
-    </div>
-    <div class="content">
-        <div class="box2">
-           <h1>Octanet</h1>
-           <button class="button">Explore More</button>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Notes</a>
         </div>
-        <div>
-           <img src="web.jpg" width="600px" height="300px">
+    </nav>
+
+
+
+    <div class="container my-3">
+        <h1>Welcome to Notes</h1>
+        <div class="card">
+
+            <div class="card-body">
+                <h5 class="card-title">Add a note</h5>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="addtxt"
+                        style="height: 18vh"></textarea>
+
+                </div>
+
+                <button class="btn btn-primary my-3" id="addbtn">Add note</button>
+            </div>
         </div>
+        <br>
+        <h2>Your Notes</h2>
+        <hr>
+
+        <div id="notes" class="row container-fluid"> </div>
     </div>
-    <div class="heading">
-        <h1>Courses</h1>
-    </div>
-    <div class="courses">
-          <div class="box">
-             <h3 class="tut">HTML</h3>
-             <p>HTML stands for HyperText Markup Language. It is used to design the web pages. With the help of HTML, you can create a complete website structure. HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web pages and markup language defines the text document within the tag that define the structure of web pages.
-             </p>
-             <button class="tut">Explore</button>
-          </div>
-          <div class="box">
-            <h3 class="tut">CSS</h3>
-            <p>CSS (Cascading Style Sheets) is used to styles web pages. Cascading Style Sheets are fondly referred to as CSS. The reason for using this is to simplify the process of making web pages presentable. It allows you to apply styles on web pages. More importantly, it enables you to do this independently of the HTML that makes up each web page.
-            </p>
-            <button class="button">Explore</button>
-         </div>
-         <div class="box">
-            <h3 class="tut">Javascript</h3>
-            <p>JavaScript (JS) is lightweight, interpreted compiled programming language. It can be used for both Client-side as well as Server-side developments. JavaScript also known as a scripting language for web pages. JavaScript simply adds dynamic content to websites to make them look good and HTML work on the look of the website without the interactive effects and all.
-            </p>
-            <button class="button">Explore</button>
-         </div>
-    </div>
-    <div class="heading">
-        <h1>Signup</h1>
-    </div>
-    <div class="signup">
-        <div class="signup-form">
-            <form>
-                <label for="name" class="text">Name :</label><br>
-                <input type="text" class="input" name="name" placeholder="Enter your name..."><br>
-                <label for="email" class="text">Email :</label><br>
-                <input type="email" class="input" name="email" placeholder="Enter your email..."><br>
-                <label for="password" class="text">Password :</label><br>
-                <input type="password" class="input" name="password" placeholder="Enter your password..."><br>
-                <button class="button">Submit</button>
-            </form>
-        </div>
-        <div>
-           <h3 class="heading">Contact Us :</h3>
-           <p class="heading">A-123, 7th Floor, Rise Corporate Tower near Green Square, Greenfield, Bangalore, Karnataka - 562107 </p>
-        </div>
-    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
 </body>
+
 </html>
